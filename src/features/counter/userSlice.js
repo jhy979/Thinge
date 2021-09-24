@@ -13,7 +13,7 @@ export const userSlice = createSlice({
       // payload는 컴포넌트에서의 데이터들이 있음. { 다양한 정보들... }
       state.user = action.payload;
     },
-    logout: state => {
+    logout: (state) => {
       state.user = null;
     }
   }

@@ -1,4 +1,6 @@
 import firebase from 'firebase';
+import 'firebase/firestore'
+
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
   apiKey: "AIzaSyB93MzrOyTr0RrWzXU4Il7bU9XfDn0-8_k",

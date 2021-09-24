@@ -1,13 +1,18 @@
 import { Avatar } from '@material-ui/core'
 import React from 'react'
+import { useSelector } from 'react-redux'
+import { selectUser } from './features/counter/userSlice'
 import './ThingeBox.css'
+
 export default function ThingeBox() {
+  const user = useSelector(selectUser)
+
   return (
     <div className="thingeBox">
       
       <div className="thingeBox_info">
-        <Avatar/>
-        <h5>리액트 프로젝트</h5>
+        <Avatar src={user.photo}/>
+        <h5>{user.displayName}</h5>
       </div>
       
       <div className="thinge_thing">

@@ -2,7 +2,9 @@ import { Avatar } from '@material-ui/core'
 import { ArrowDownwardOutlined, ArrowUpwardOutlined, ChatBubbleOutlineOutlined, MoreHorizOutlined, RepeatOneOutlined, ShareOutlined } from '@material-ui/icons'
 import React from 'react'
 import './Post.css'
+
 export default function Post() {
+
   return (
     <div className="post">
 

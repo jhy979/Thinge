@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { ArrowForwardIos } from '@material-ui/icons'
 import React from 'react'
 import './Login.css'
-import auth from './firebase'
+import {auth, provider} from './firebase'
 export default function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -10,27 +10,36 @@ export default function Login() {
   //로그인 함수
   const handleLogin = (e) => {
     e.preventDefault(); // 새로고침방지
-    auth.siginInWithEmailAndPassword(email,password).then(
-      (auth)=>{
+    auth.signInWithEmailAndPassword(email, password).then(
+      (auth) => {
         console.log(auth)
       }
-    ).catch(err=>alert(err))
+    ).catch(err => alert("이메일 혹은 비밀번호가 틀렸습니다. 다시 확인해주세요."))
 
     setEmail("");
     setPassword("");
   }
+
   // 회원가입
-  const handleRegister = (e)=>{
+  const handleRegister = (e) => {
     e.preventDefault();
-    auth.createUserWithEmailAndPassword(email,password).then(
-      (auth)=>{
-        if(auth)
+    auth.createUserWithEmailAndPassword(email, password).then(
+      (auth) => {
+        if (auth)
           console.log(auth)
       }
-    ).catch(err=>alert(err.message))
+    ).catch(err => alert(err.message))
+
     setEmail("");
     setPassword("");
   }
+
+  // 구글 로그인
+  const signIn = () => {
+    auth.signInWithPopup(provider).catch(err => alert(err.message))
+    console.log(auth);
+  }
+  
   return (
     <div className="login">
       
@@ -40,7 +49,7 @@ export default function Login() {
           <h3>세상의 모든 질문</h3>
           <p>
             어떤 분야든 고민하지말고<br/> 
-            어떤 궁금증이든 Thinge에서 해결하세요
+            모든 궁금증들을 Thinge에서 해결하세요
           </p>
         </div>
         
@@ -49,7 +58,7 @@ export default function Login() {
 
             <div className="login_authOption">
               <img className="login_googleAuth" src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="Google"/>
-              <p>구글 아이디로 로그인</p>
+              <p onClick={signIn}>구글 아이디로 로그인</p>
             </div>
 
             <div className="login_authOption">
