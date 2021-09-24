@@ -12,7 +12,7 @@ export default function ThingeBox() {
       
       <div className="thingeBox_info">
         <Avatar src={user.photo}/>
-        <h5>{user.displayName}</h5>
+        <h5>{user.displayName ? user.displayName : user.email.match(/.+@/)[0].slice(0,-1) }</h5>
       </div>
       
       <div className="thinge_thing">
