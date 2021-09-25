@@ -1,8 +1,20 @@
-## 과정 기록
+# Thinge
 
-1. 프로젝트 생성
-2. firebase 생성 및 연동
-3. 각 웹 페이지 컴포넌트 생성 완료
-5. Redux 도입 및 Store 생성
-6. 로그인 기능 구현 ( 이메일로 로그인, 구글로 로그인)
-7. 질문하기 Modal창 UI 완료
+<img src="https://user-images.githubusercontent.com/32920566/133925017-5b1dacae-9806-4e42-9bca-4d77f2a68bfa.jpg" width=600px height=300/>
+
+## 프로젝트 설명
+- Thinge는 여러 주제에 대하여 질문과 답변을 남기는 질문과 답변 커뮤니티입니다.
+
+
+## 프로젝트 색상코드
+<img src = "https://user-images.githubusercontent.com/32920566/133925020-3df8dc31-dbcc-44c4-b78d-fa5dbb93183d.JPG"/>
+
+
+
+
+## 사용 기술
+- react
+- materialUI
+- Firebase
+
+
