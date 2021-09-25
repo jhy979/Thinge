@@ -1,0 +1,28 @@
+.widget {
+  flex: 0.2;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border: 1px solid olive;
+  border-radius: 5px;
+  max-height: 85vh;
+  background-color: #ebd8ad;
+}
+
+.widget_header {
+  border-bottom: 1px solid olive;
+}
+.widget_header > h5 {
+  padding: 10px;
+  font-size: 17px;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.widget_contents {
+  display: flex;
+  flex-direction: column;
+}
+

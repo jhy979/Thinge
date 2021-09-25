@@ -1,0 +1,178 @@
+.login {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  color: #ebd8ad;
+  background-color: #ebd8ad;
+  background-image: url("https://user-images.githubusercontent.com/32920566/133925017-5b1dacae-9806-4e42-9bca-4d77f2a68bfa.jpg");
+  background-size: 120px;
+}
+.login_container {
+  display: flex;
+  flex-direction: column;
+  background-color: #274722;
+  padding: 20px;
+  width: 55%;
+  border-radius: 50px;
+  z-index: 1;
+}
+
+.login_logo {
+  height: 150px;
+  object-fit: contain;
+}
+.login_logo > img{
+  margin-top: 150px;
+  width: 700px;
+  object-fit: contain;
+  border-radius: 20px;
+}
+.login_desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 30vh;
+}
+.login_desc > h3 {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 100px;
+  letter-spacing: 1px;
+}
+
+.login_desc > p {
+  letter-spacing: 3px;
+  color:wheat;
+  margin-top:10px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 35px;
+}
+.login_auth {
+  display: flex;
+  margin-top: 20px;
+}
+.login_authOptions {
+  display: flex;
+  flex: 0.5;
+  flex-direction: column;
+  padding: 20px;
+  border-right: 1px solid #ebd8ad;
+}
+.login_authOption {
+  display: flex;
+  align-items: center;
+  padding: 7px;
+  margin-bottom: 15px;
+  border: 1px solid #ebd8ad;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.login_authOption:hover {
+  transition: .3s;
+  transform: scale(1.1);
+  background-color: olivedrab;
+}
+
+.login_authOption > img {
+  height: 30px;
+  object-fit: contain;
+}
+.login_authOption > p {
+  margin-left: 11px;
+}
+
+.login_authDesc {
+  display: flex;
+  align-items: center;
+  padding: 7px;
+  margin-bottom: 15px;
+}
+
+.login_emailPass {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  flex:0.5;
+  margin-left: 20px;
+}
+
+.login_label > h4 {
+  padding: 5px;
+}
+.login_inputFields {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+.login_inputField {
+  padding: 5px;
+}
+.login_inputField > input {
+  padding: 10px;
+  width: 100%;
+  outline: none;
+  border:none;
+  border-radius: 10px;  
+  background-color: #fff;
+}
+.login_forgButt {
+  border-radius: 10px;
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.login_forgButt > small {
+  cursor:pointer;
+}
+.login_forgButt > small:hover {
+  transition: .3s;
+  transform: scale(1.2);
+}
+.login_emailPass button {
+  color: black;
+  border:none;
+  outline:none;
+  background-color: #ebd8ad;
+  border-radius: 5px;
+  padding: 9px;
+  font-weight: bold;
+  font-size: 15px;
+  margin-top: 10px;
+  letter-spacing: 2px;
+  cursor:pointer;
+}
+.login_emailPass button:hover {
+  transition: .3s;
+  transform: scale(1.1);
+}
+.login_lang {
+  margin-top:  30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid #ebd8ad;
+  border-bottom: 1px solid #ebd8ad;
+  padding:10px;
+}
+.login_lang > p {
+  font-size: 20px;
+  cursor: pointer;
+}
+.login_lang > p:hover,
+.login_footer > p:hover {
+  transition: .3s;
+  margin-right: 5px;
+  transform: scale(1.3);
+}
+
+.login_footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}

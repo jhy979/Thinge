@@ -1,0 +1,29 @@
+.thingeBox {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border: 1px solid olive;
+  /* background-color: whitesmoke; */
+  border-radius: 5px;
+  cursor: pointer;
+}
+.thingeBox:hover {
+  border: 2px solid #274722;
+}
+.thingeBox_info > h5 {
+  color :black;
+  font-weight: 300;
+  margin-top : 5px;
+  margin-left: 5px;
+}
+
+.thinge_thing {
+  display: flex;
+  margin-left: 5px;
+  margin-top: 8px;
+}
+.thinge_thing > p {
+  color: black;
+  font-weight: 400;
+  font-size: large;
+}
