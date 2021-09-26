@@ -19,11 +19,11 @@ export default function Navbar() {
     setOpenModal(false);
     db.collection("questions").add({
       questions: input,
-      imgUrl: inputUrl,
+      imageUrl: inputUrl,
       timestamp: firebase.firestore.FieldValue.serverTimestamp(),
       user: user
     })
-    
+
     setInput("");
     setInputUrl("");
   }

@@ -3,20 +3,20 @@ import { ArrowDownwardOutlined, ArrowUpwardOutlined, ChatBubbleOutlineOutlined, 
 import React from 'react'
 import './Post.css'
 
-export default function Post() {
+export default function Post( {key,Id,image,question,timestamp,thingeUser}) {
 
   return (
     <div className="post">
 
        <div className="post_info">
-        <Avatar/>
-        <h5>유저 아이디</h5>
-        <small>작성시간</small>
+        <Avatar src={thingeUser.photo}/>
+        <h5>{thingeUser.displayName ? thingeUser.displayName : thingeUser.email.match(/.+@/).slice(0,-1)}</h5>
+        <small>{new Date(timestamp).toLocaleString()}</small>
       </div>
 
       <div className="post_body">
         <div className="post_question">
-          <p>질문 내용</p>
+          <p>{question}</p> 
           <button className="post_btnAnswer">답변하기</button>
         </div>
         
@@ -24,7 +24,8 @@ export default function Post() {
           <p>답변 내용</p>
         </div>
       </div>
-
+      <img src={image} alt=""/>
+      
       <div className="post_footer">
         <div className="post_footerAction">
           <ArrowUpwardOutlined/>
