@@ -1,5 +1,5 @@
 import { Avatar, Button, Input } from '@material-ui/core'
-import { AssignmentIndOutlined, BorderAllRounded, ExpandMore, Home, Language, Link, NoEncryption, NotificationsOutlined, PeopleAltOutlined, Search } from '@material-ui/icons'
+import { AssignmentIndOutlined, BorderAllRounded, ExpandMore, Home, Language, Link, NotificationsOutlined, PeopleAltOutlined, Search } from '@material-ui/icons'
 import React from 'react'
 import {useSelector} from 'react-redux'
 import { useState } from 'react'
