@@ -73,7 +73,7 @@ export default function Post( {key,Id,image,question,timestamp,thingeUser}) {
 
        <div className="post_info">
         <Avatar src={thingeUser.photo}/>
-        <h5>{thingeUser.displayName ? thingeUser.displayName : thingeUser.email.match(/.+@/).slice(0,-1)}</h5>
+        <h5>{thingeUser.displayName ? thingeUser.displayName : thingeUser.email.match(/.+@/)[0].slice(0,-1)}</h5>
         <small>{new Date(timestamp).toLocaleString()}</small>
       </div>
 
