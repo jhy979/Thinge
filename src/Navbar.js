@@ -1,17 +1,32 @@
 import { Avatar, Button, Input } from '@material-ui/core'
-import { AssignmentIndOutlined, BorderAllRounded, ExpandMore, Home, Language, Link, NoEncryption, NotificationsOutlined, PeopleAltOutlined, Search } from '@material-ui/icons'
+import { AssignmentIndOutlined, BorderAllRounded, ExpandMore, Home, Language, Link, NotificationsOutlined, PeopleAltOutlined, Search } from '@material-ui/icons'
 import React from 'react'
 import {useSelector} from 'react-redux'
 import { useState } from 'react'
 import { selectUser } from './features/counter/userSlice'
-import { auth } from './firebase'
+import db, { auth } from './firebase'
 import './Navbar.css'
 import Modal from 'react-modal'
-
+import firebase from 'firebase'
 export default function Navbar() {
-  
+
   const user = useSelector(selectUser)
   const [openModal, setOpenModal] = useState(false)
+  const [input, setInput] = useState("")
+  const [inputUrl, setInputUrl] = useState("")
+  const handleQuestion = (e) => {
+    e.preventDefault();
+    setOpenModal(false);
+    db.collection("questions").add({
+      questions: input,
+      imageUrl: inputUrl,
+      timestamp: firebase.firestore.FieldValue.serverTimestamp(),
+      user: user
+    })
+
+    setInput("");
+    setInputUrl("");
+  }
 
   return (
     <div className="navbar">
@@ -88,19 +103,17 @@ export default function Navbar() {
             </div>
 
             <div className="modal_field">
-              <Input className="input" type="text" placeholder="질문을 남기세요."/>
+              <Input className="input" type="text" placeholder="질문을 남기세요." required value={input} onChange={(e)=>{setInput(e.target.value)}}/>
                 <div className="modal_fieldLink">
                   <Link/>
-                  <Input className="input" type="text" placeholder="삽입 url, 이미지"/>
+                  <Input className="input" type="text" placeholder="삽입 url, 이미지" value={inputUrl} onChange={(e)=>{setInputUrl(e.target.value)}}/>
                 </div>
             </div>
             <div className="modal_buttons">
-              <Button type="text" className="add" onClick={()=>{setOpenModal(false)}}>질문하기</Button>
+              <Button type="text" className="add" onClick={handleQuestion}>질문하기</Button>
               <Button className="cancel" onClick={()=>{setOpenModal(false)}}>닫기</Button>
             </div>
           </Modal>
-
-
         </div>
 
 
