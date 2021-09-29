@@ -73,7 +73,7 @@ export default function Post( {key,Id,image,question,timestamp,thingeUser}) {
 
        <div className="post_info">
         <Avatar src={thingeUser.photo}/>
-        <h5>{thingeUser.displayName ? thingeUser.displayName : thingeUser.email.match(/.+@/).slice(0,-1)}</h5>
+        <h5>{thingeUser.displayName ? thingeUser.displayName : thingeUser.email.match(/.+@/)[0].slice(0,-1)}</h5>
         <small>{new Date(timestamp).toLocaleString()}</small>
       </div>
 
@@ -103,7 +103,7 @@ export default function Post( {key,Id,image,question,timestamp,thingeUser}) {
             <div className="modal_question">
               <h1>{question}</h1>
               <p>
-                <span className="name">{thingeUser.displayName ? thingeUser.displayName : thingeUser.email.match(/.+@/).slice(0,-1)}</span>
+                <span className="name">{thingeUser.displayName ? thingeUser.displayName : thingeUser.email.match(/.+@/)[0].slice(0,-1)}</span>
                 님의 질문
                 <span className="time">{new Date(timestamp).toLocaleString()}</span>
               </p>
@@ -143,7 +143,7 @@ export default function Post( {key,Id,image,question,timestamp,thingeUser}) {
                         fontSize: "small",
                         display:"flex",
                         right:"0px"}}>
-                        <span style={{color:"#274722 ", marginRight:"20px"}}>{answer.user.displayName ? answer.user.displayName : answer.user.email.match(/.+@/).slice(0,-1)}</span>
+                        <span style={{color:"#274722 ", marginRight:"20px"}}>{answer.user.displayName ? answer.user.displayName : answer.user.email.match(/.+@/)[0].slice(0,-1)}</span>
                         <span style={{color:"olivedrab"}}>{new Date(answer.timestamp).toLocaleString()}</span>
                       </span> 
                     </span> 
