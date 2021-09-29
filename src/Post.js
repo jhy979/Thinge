@@ -29,7 +29,7 @@ export default function Post( {key,Id,image,question,timestamp,thingeUser}) {
   const dispatch = useDispatch()
   const user = useSelector(selectUser)
   const questionId = useSelector(selectQuestionId)
-  const questionName = useSelector(selectQuestionName)
+  // const questionName = useSelector(selectQuestionName)
   const [getAnswer, setGetAnswer] = useState([])
 
   const handleAnswer = (e)=>{
