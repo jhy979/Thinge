@@ -16,10 +16,10 @@ import React, {
 import './Post.css'
 import Modal from 'react-modal'
 import {useDispatch,useSelector} from 'react-redux'
-import { selectQuestionId, selectQuestionName, setQuestionInfo } from './features/counter/questionSlice'
+import { selectQuestionId, setQuestionInfo } from './features/counter/questionSlice'
 import { selectUser } from './features/counter/userSlice'
 import db from './firebase'
-import firebase from 'firebase'
+import firebase from 'firebase'`
 Modal.setAppElement("#root")
 
 export default function Post( {key,Id,image,question,timestamp,thingeUser}) {
