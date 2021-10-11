@@ -13,7 +13,7 @@
 }
 
 .sidebarOptions .sidebarOption:hover {
-  transition: .3s;
+  transition: 0.3s;
   font-size: 30px;
   font-weight: 700;
 }

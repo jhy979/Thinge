@@ -1,6 +1,6 @@
-import React from 'react'
-import './Widget.css'
-import WidgetOptions from './WidgetOptions'
+import React from "react";
+import "./Widget.css";
+import WidgetOptions from "./WidgetOptions";
 export default function Widget() {
   return (
     <div className="widget">
@@ -8,8 +8,8 @@ export default function Widget() {
         <h5>Advertisements</h5>
       </div>
       <div className="widget_contents">
-        <WidgetOptions/>
+        <WidgetOptions />
       </div>
     </div>
-  )
+  );
 }

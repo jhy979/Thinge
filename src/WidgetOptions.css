@@ -5,7 +5,7 @@
 }
 
 .widget_content {
-  margin : 5px;
+  margin: 5px;
   display: flex;
   padding: 5px;
   border: 1px solid olive;
@@ -15,4 +15,3 @@
   height: 30px;
   border-radius: 5px;
 }
-

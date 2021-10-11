@@ -1,6 +1,6 @@
-import React from 'react'
-import './SidebarOption.css'
-import {Add} from '@material-ui/icons'
+import React from "react";
+import "./SidebarOption.css";
+import { Add } from "@material-ui/icons";
 export default function SidebarOption() {
   return (
     <div className="sidebarOptions">
@@ -29,10 +29,9 @@ export default function SidebarOption() {
       </div>
 
       <div className="sidebarOption">
-        <Add/>
+        <Add />
         <p className="text">더보기</p>
       </div>
-
     </div>
-  )
+  );
 }
