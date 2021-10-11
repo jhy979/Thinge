@@ -1,12 +1,12 @@
 * {
   /* font-family: 'Nanum Gothic', sans-serif; */
-  font-family: 'Nanum Pen Script', cursive;
+  font-family: "Nanum Pen Script", cursive;
   /* font-family: 'Sunflower', sans-serif;  */
 }
 .App {
-  margin : 0;
+  margin: 0;
   background-color: #ebd8ad;
-  color : #274722;
+  color: #274722;
   height: auto;
   width: auto;
 }

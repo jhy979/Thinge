@@ -9,7 +9,7 @@
 }
 
 .post:hover {
-  transition: .3s;
+  transition: 0.3s;
   border: 2px solid #274722;
 }
 
@@ -18,15 +18,15 @@
   align-items: center;
 }
 
-.post_info>h5 {
+.post_info > h5 {
   color: #274722;
   margin-left: 10px;
   cursor: pointer;
   font-size: 13px;
 }
 
-.post_info>h5:hover {
-  transition: .3s;
+.post_info > h5:hover {
+  transition: 0.3s;
   transform: scale(1.1);
 }
 
@@ -39,7 +39,7 @@
   flex-direction: column;
 }
 
-.post_body>.post_question {
+.post_body > .post_question {
   margin-top: 10px;
   font-weight: 500;
   margin-bottom: 10px;
@@ -47,19 +47,19 @@
   display: flex;
 }
 
-.post_body>.post_question>p:hover {
-  transition: .3s;
+.post_body > .post_question > p:hover {
+  transition: 0.3s;
   transform: scale(1.1);
 }
 
-.post_body>img {
+.post_body > img {
   object-fit: contain;
   width: 100%;
   border-radius: 5px;
   cursor: pointer;
 }
 
-.post_question>.post_btnAnswer {
+.post_question > .post_btnAnswer {
   margin-left: auto;
   outline: none;
   border: none;
@@ -69,9 +69,9 @@
   padding: 10px;
 }
 
-.post_question>.post_btnAnswer:hover {
+.post_question > .post_btnAnswer:hover {
   cursor: pointer;
-  transition: .3s;
+  transition: 0.3s;
   transform: scale(1.1);
 }
 
@@ -91,28 +91,28 @@
   align-items: center;
 }
 
-.post_footerAction>.MuiSvgIcon-root {
+.post_footerAction > .MuiSvgIcon-root {
   cursor: pointer;
   margin-left: 20px;
   margin-right: 20px;
 }
 
-.post_footerAction>.MuiSvgIcon-root:hover {
+.post_footerAction > .MuiSvgIcon-root:hover {
   cursor: pointer;
   color: whitesmoke;
-  transition: .2s;
+  transition: 0.2s;
   transform: scale(1.3);
 }
 
-.post_footer>.MuiSvgIcon-root {
+.post_footer > .MuiSvgIcon-root {
   margin-left: 20px;
   margin-right: 20px;
   cursor: pointer;
 }
 
-.post_footer>.MuiSvgIcon-root:hover {
+.post_footer > .MuiSvgIcon-root:hover {
   cursor: pointer;
-  transition: .3s;
+  transition: 0.3s;
   transform: scale(1.3);
 }
 
@@ -120,14 +120,14 @@
   margin-left: auto;
 }
 
-.post_footerRight>.MuiSvgIcon-root {
+.post_footerRight > .MuiSvgIcon-root {
   cursor: pointer;
   margin-left: 30px;
 }
 
-.post_footerRight>.MuiSvgIcon-root:hover {
+.post_footerRight > .MuiSvgIcon-root:hover {
   cursor: pointer;
-  transition: .3s;
+  transition: 0.3s;
   transform: scale(1.3);
 }
 
@@ -135,7 +135,7 @@
   color: #ebd8ad;
 }
 
-.modal_question>h1 {
+.modal_question > h1 {
   font-size: 20px;
   font-weight: normal;
   margin-bottom: 20px;

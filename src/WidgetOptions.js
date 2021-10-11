@@ -1,5 +1,5 @@
-import React from 'react'
-import './WidgetOptions.css'
+import React from "react";
+import "./WidgetOptions.css";
 export default function WidgetOptions() {
   return (
     <div className="widgetOptions">
@@ -17,7 +17,6 @@ export default function WidgetOptions() {
         {/* <img src= "" alt="광고3"> */}
         <p>광고3 </p>
       </div>
-
     </div>
-  )
+  );
 }
