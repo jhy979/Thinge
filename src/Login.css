@@ -5,9 +5,11 @@
   justify-content: center;
   height: 100vh;
   color: #ebd8ad;
-  background-color: #ebd8ad;
-  background-image: url("https://user-images.githubusercontent.com/32920566/133925017-5b1dacae-9806-4e42-9bca-4d77f2a68bfa.jpg");
-  background-size: 120px;
+  background-image: url("./static/bg.png");
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .login_container {
   display: flex;
